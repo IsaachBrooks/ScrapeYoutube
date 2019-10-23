@@ -124,7 +124,8 @@ runs to be almost instant.
 FILE NAMING:
 
 Data files produced by YoutubeVisualize.py are named according to the following formula:
-ChannelName_(year)(month)(day)(hour)(minute)_tagData.csv
+
+    ChannelName_(year)(month)(day)(hour)(minute)_tagData.csv
 
 --------------------------------------------------
 
