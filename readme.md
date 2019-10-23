@@ -26,6 +26,12 @@ Requird packages:
     google-auth-httplib2
     
 
+Required drivers:
+    
+    geckodriver https://github.com/mozilla/geckodriver/releases
+    chromedriver https://chromedriver.chromium.org/
+
+
 Additional Setup:
 For the Youtube Data API to work correctly an environment variable must be set like the following:
 
