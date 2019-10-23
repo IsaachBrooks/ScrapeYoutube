@@ -1,14 +1,6 @@
 YouTube Data Project
 Isaac Brooks
 
-Included Files:
-    ScrapeYoutube2.py
-    YoutubePredict.py
-    YoutubeVisualize.py
-    LinusTechTips_2019562315_scrape.csv
-    key.json                            [sensitive, please be careful]
-    ScrapeYoutube-2d857f0f6524.json     [sensitive, please be careful]
-
 Table of Contents:
 
 0. Setup
@@ -22,6 +14,7 @@ Table of Contents:
 
 
 0. -------------------- Setup --------------------
+
 Requird packages:
     pandas
     scipy
@@ -45,6 +38,7 @@ For the Youtube Data API to work correctly an environment variable must be set l
 
 
 1. ---------------- ScrapeYoutube ----------------
+
 ScrapeYoutube2.py is a API driven scraper for any given Youtube channel.
 It will load a channels entire* (see unresolved issue #1) video list and store the following from each video:
     Video Name,
@@ -104,6 +98,7 @@ The YouTube Data API cap is reset at 3:00AM PDT.
 
 
 2. --------------- YoutubeVisualize --------------
+
 YoutubeVisualize.py produces visuals using the data acquired by ScrapeYoutube2.py
 The following visuals are produced:
     A graph of Likes and Dislikes on every video, X axis is time.
@@ -129,6 +124,7 @@ ChannelName_(year)(month)(day)(hour)(minute)_tagData.csv
 
 
 3. ---------------- YoutubePredict ---------------
+
 YoutubePredict.py uses the data acquired from ScrapeYoutube2.py to make predictions.
 It will produce the following models:
     Model 1. Bag of words model using video tags to predict number of views.
