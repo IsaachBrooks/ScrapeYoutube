@@ -36,10 +36,10 @@ Additional Setup:
 For the Youtube Data API to work correctly an environment variable must be set like the following:
 
     Windows via Powershell:
-    $env:GOOGLE_APPLICATION_CREDENTIALS= (path to ScrapeYoutube-2d857f0f6524.json)
+    $env:GOOGLE_APPLICATION_CREDENTIALS= (path to json for Youtube API Credentials)
 
     Linux:
-    export GOOGLE_APPLICATION_CREDENTIALS= (path to ScrapeYoutube-2d857f0f6524.json)
+    export GOOGLE_APPLICATION_CREDENTIALS= (path to json for Youtube API Credentials)
 
 --------------------------------------------------
 
