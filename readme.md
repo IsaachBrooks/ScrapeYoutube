@@ -18,17 +18,11 @@ Table of Contents:
 Requird packages:
 
     pandas
-    
     scipy
-    
     sklearn
-    
     selenium w/ geckodriver
-    
     google-api-python-client
-    
     google-auth-oauthlib
-    
     google-auth-httplib2
     
 
@@ -49,6 +43,7 @@ For the Youtube Data API to work correctly an environment variable must be set l
 
 ScrapeYoutube2.py is a API driven scraper for any given Youtube channel.
 It will load a channels entire* (see unresolved issue #1) video list and store the following from each video:
+
     Video Name,
     Video Tags,
     Number of Likes,
@@ -63,6 +58,7 @@ It will load a channels entire* (see unresolved issue #1) video list and store t
 
 On startup, the user will be asked if they wish to restart from a previous run, more on that later.
 If no is selected, the user will be prompted for a channel or user in one of the following formats:
+
     http://www.youtube.com/user/(user name here)/videos
     http://www.youtube.com/user/(user name here)/
     http://www.youtube.com/channel/(channel name here)/videos
@@ -89,6 +85,7 @@ ChannelName_(year)(month)(day)(hour)(minute)_scrape.(csv/json)
 
 API DATA CAP:
 If ScrapeYoutube2.py reaches max calls to the YouTube Data API before it is finished, it will save the following:
+
     Name of the CSV file,
     Current time stamp,
     ChannelID,
@@ -109,6 +106,7 @@ The YouTube Data API cap is reset at 3:00AM PDT.
 
 YoutubeVisualize.py produces visuals using the data acquired by ScrapeYoutube2.py
 The following visuals are produced:
+
     A graph of Likes and Dislikes on every video, X axis is time.
     A graph of Views, Likes, and Dislikes on every video, X axis is time.
     A scatter plot of the number of comments vs the sum of likes and dislikes.
@@ -124,6 +122,7 @@ dataset will take several minutes. Once this dataframe is generated it will be o
 runs to be almost instant.
 
 FILE NAMING:
+
 Data files produced by YoutubeVisualize.py are named according to the following formula:
 ChannelName_(year)(month)(day)(hour)(minute)_tagData.csv
 
