@@ -16,13 +16,21 @@ Table of Contents:
 0. -------------------- Setup --------------------
 
 Requird packages:
+
     pandas
+    
     scipy
+    
     sklearn
+    
     selenium w/ geckodriver
+    
     google-api-python-client
+    
     google-auth-oauthlib
+    
     google-auth-httplib2
+    
 
 Additional Setup:
 For the Youtube Data API to work correctly an environment variable must be set like the following:
